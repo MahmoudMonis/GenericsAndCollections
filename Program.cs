@@ -12,7 +12,6 @@ class Program
         List<string> stringList = new List<string>();
         List<Employee> employeeList = new List<Employee>();
 
-        // Add items
         intList.Add(10);
         intList.Add(20);
 
@@ -22,7 +21,6 @@ class Program
         employeeList.Add(new Employee(1, "Mahmoud Taha"));
         employeeList.Add(new Employee(2, "cristiano ronaldo"));
 
-        // Get items
         Console.WriteLine("Int List:");
         foreach (int number in intList)
         {
@@ -41,7 +39,6 @@ class Program
             Console.WriteLine($"ID: {employee.Id}, Name: {employee.Name}");
         }
 
-        // Delete items
         intList.Remove(20);
         stringList.Remove("Mahmoud");
         employeeList.RemoveAll(e => e.Id == 2);
@@ -66,7 +63,6 @@ class Program
             Console.WriteLine($"ID: {employee.Id}, Name: {employee.Name}");
         }
 
-        // Clear all items
         intList.Clear();
         stringList.Clear();
         employeeList.Clear();
